@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="sample.cau3.Cau3Controller"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="509.0" prefWidth="877.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.cau3.Cau3Controller">
+   <children>
+      <TableView fx:id="table" layoutX="60.0" layoutY="108.0" prefHeight="293.0" prefWidth="281.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="year" prefWidth="75.0" text="YEAR" />
+            <TableColumn fx:id="salary" prefWidth="75.0" text="SALARY" />
+        </columns>
+      </TableView>
+      <Button layoutX="545.0" layoutY="163.0" mnemonicParsing="false" onAction="#onQuery" stylesheets="@../app.css" text="Query" />
+   </children>
 </AnchorPane>

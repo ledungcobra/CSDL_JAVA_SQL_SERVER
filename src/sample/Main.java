@@ -13,16 +13,18 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         stage = primaryStage;
 
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+//        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("cau3/cau3.fxml"));
+
         stage.setTitle("HOME");
         primaryStage.setScene(new Scene(root));
-
         primaryStage.show();
     }
 
 
 
     public static void main(String[] args) {
+
         launch(args);
     }
 }
