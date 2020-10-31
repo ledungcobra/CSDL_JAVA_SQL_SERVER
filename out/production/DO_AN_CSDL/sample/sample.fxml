@@ -47,6 +47,6 @@
       </TableView>
    </center>
    <bottom>
-      <Button mnemonicParsing="false" text="Button" BorderPane.alignment="CENTER" />
+      <Button mnemonicParsing="false" onAction="#nextScreeen" text="Button" BorderPane.alignment="CENTER" />
    </bottom>
 </BorderPane>

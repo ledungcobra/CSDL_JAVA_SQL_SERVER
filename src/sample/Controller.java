@@ -58,19 +58,19 @@ public class Controller implements  Initializable{
 
     }
 
-//    public void nextScreeen(ActionEvent e){
-//        Stage stage = (Stage)((Node)e.getSource()).getScene().getWindow();
-//        FXMLLoader loader = new FXMLLoader();
-//        loader.setLocation(getClass().getResource("cau1/cau1.fxml"));
-//
-//        try {
-//            Parent studentViewParent = loader.load();
-//            Scene scene = new Scene(studentViewParent);
-//            stage.setScene(scene);
-//
-//        } catch (IOException ioException) {
-//            ioException.printStackTrace();
-//        }
-//
-//    }
+    public void nextScreeen(ActionEvent e){
+        Stage stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("cau1/cau1.fxml"));
+
+        try {
+            Parent studentViewParent = loader.load();
+            Scene scene = new Scene(studentViewParent);
+            stage.setScene(scene);
+
+        } catch (IOException ioException) {
+            ioException.printStackTrace();
+        }
+
+    }
 }
